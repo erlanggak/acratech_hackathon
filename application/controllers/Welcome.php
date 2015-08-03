@@ -8,4 +8,10 @@ class Welcome extends CI_Controller {
 		$data['title'] = "Acratech App 1.0";
 		$this->load->view('main',$data);
 	}
+
+	public function login()
+	{
+		$data['title'] = "Welcome | Acratech App 1.0";
+		$this->load->view('login',$data);
+	}
 }
