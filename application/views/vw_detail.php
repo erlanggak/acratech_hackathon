@@ -9,7 +9,7 @@
         $this->load->view('include/head'); 
 		$string = base_url('')."/xml/coffee_shop.xml";
 		$xml=simplexml_load_file($string) or die("Error: Cannot create object");
-		$coffeeShopName = $xml->result->{'item' .$_GET['id']}->name;
+		$coffeeShopName = $xml->result->{'item' .$_GET['id']}->name;		
 		$arr = explode(' ',trim($coffeeShopName));
 		$hashtag = $arr[0].$arr[1];
     ?>
