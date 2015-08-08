@@ -45,7 +45,7 @@
                   { ?>
                       <tr>
                         <td><?php echo $count+1 ?></td>
-                        <td><?php echo "<a href=''>".$xml->result->{'item' . $count}->name ."</a>"; ?></td>
+                        <td><?php echo "<a href='http://localhost/acratech_hackathon/detail?id=".$count."'>".$xml->result->{'item' . $count}->name ."</a>"; ?></td>
                       </tr>
                     <?php  }
                 ?> 

@@ -9,7 +9,12 @@
         $this->load->view('include/head'); 
 		$string = base_url('')."/xml/coffee_shop.xml";
 		$xml=simplexml_load_file($string) or die("Error: Cannot create object");
-		$hashtag = "MaharajaCoffee";
+		$coffeeShopName = $xml->result->{'item' .$_GET['id']}->name;
+		$arr = explode(' ',trim($coffeeShopName));
+		$hashtag = $arr[0].$arr[1];
+		echo str_word_count($coffeeShopName);
+		echo $hashtag;
+		//$hashtag = "Coffee";
     ?>
 
 	<style>
@@ -51,8 +56,13 @@
 			echo "District\t: ". $xml->result->{'item' .$_GET['id']}->district. "<br>";
 			echo "Address\t: ". $xml->result->{'item' .$_GET['id']}->address. "<br>";
 			echo "Telephone\t: ". $xml->result->{'item' .$_GET['id']}->telephone. "<br>";
+			?>
+			<form method="post" action="<?=base_url()?>user/input"> 
 			
-	  ?>	
+			
+			<input type="text" name="input_comment" placeholder="Your comment here...">
+			<input type="submit" value="Comment" name="input"/>
+			</form>
 			
 		</div>
 		<div>instagram feed</div>
