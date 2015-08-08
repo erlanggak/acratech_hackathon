@@ -35,4 +35,6 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
- 
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "af92f35b-eb8d-4ff1-9fe3-677aa9d2dddf", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
