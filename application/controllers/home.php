@@ -8,11 +8,19 @@ class Home extends CI_Controller {
 	    $this->load->model('auth');
 	    $this->load->helper(array('form', 'url'));
   	}
-	public function index()
-	{
+	public function index(){
 		if ($this->session->userdata('logged_in')) {
 			$data['title'] = "Welcome to Jakarta Tourism";
-			$this->load->view('vw_home.php',$data);
+			$this->load->view('vw_home',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
+
+	public function destinasi(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "Tour Destination Jakarta Tourism";
+			$this->load->view('vw_destinasi',$data);
 		} else {
         	redirect('login');
     	}
