@@ -6,17 +6,19 @@
     <style type="text/css">
 	#info {
 		margin: auto;
-		width: 60%;
+		max-width: 600px;
+		min-width: 320px;
 		background-color: white;
 		padding: 10px;
 	}
 	.profile {		
 		margin: auto;
-		width: 60%;
+		max-width: 600px;
+		min-width: 320px;
 		background-color: white;
 		padding: 20px;
 	}
-	img {
+	.profile img {
 		padding: 10px;
 	}
     </style>
@@ -30,6 +32,14 @@
           $this->load->view('include/header')
           ?>
       <!-- Full Width Column -->
+	  <div id="sharebutton">
+		<span class='st_twitter' displayText='Tweet'></span>
+		<span class='st_facebook' displayText='Facebook'></span>
+		<span class='st_linkedin' displayText='LinkedIn'></span>
+		<span class='st_pinterest' displayText='Pinterest'></span>
+		<span class='st_whatsapp' displayText='WhatsApp'></span>
+		<span class='st_email' displayText='Email'></span>
+	  </div>
 	  <div id="info">
 		<img src="<?php echo base_url('') ?>image/acratech_logo.png"></img>
 		<p>
@@ -41,6 +51,7 @@
 	  
 	  <div class = "profile">
 		<img src="<?php echo base_url('') ?>image/erlangga.png"></img>
+		<br>
 		<b>Erlangga Krisnamukti</b>
 		<br>
 		-Surabaya, May 12 1993
@@ -54,6 +65,7 @@
 	  </div>
 	  <div class = "profile">
 		<img src="<?php echo base_url('') ?>image/aji.png"></img>
+		<br>
 		<b>Dwi Al Aji Suseno</b>
 		<br>
 		-Banyuwangi, June 19 1993
@@ -67,6 +79,7 @@
 	  </div>
 	  <div class = "profile">
 		<img src="<?php echo base_url('') ?>image/naasa.png"></img>
+		<br>
 		<b>Naasa Fikri</b>
 		<br>
 		-Ponorogo, September 28 1993
