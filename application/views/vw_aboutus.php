@@ -16,7 +16,7 @@
 		background-color: white;
 		padding: 20px;
 	}
-	img {
+	.profile img {
 		padding: 10px;
 	}
     </style>
