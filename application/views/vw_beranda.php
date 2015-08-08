@@ -21,8 +21,6 @@
           ?>
       <!-- Full Width Column -->
       
-        
-      
       <div class="content-wrapper back" >
             <img  src="<?php echo base_url('')?>image/jakarta_map.png">
       </div><!-- /.content-wrapper -->

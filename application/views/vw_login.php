@@ -5,13 +5,15 @@
         $this->load->view('include/head');
     ?>
 
-    <body>
-
-        <div class="login-box">
-      
+    <body class="skin-blue layout-top-nav">
+        <div>
+        <?php 
+          $this->load->view('include/header')
+          ?>
+    <div  class="login-box">
       <div class="login-box-body">
         <p class="login-box-msg">Sign in to get more information</p>
-        <form action="<?php echo base_url('')?>login/auth_login" method="post">
+        <form id="login_form" action="<?php echo base_url('')?>login/auth_login" method="post">
           <div class="form-group has-feedback">
             <input name="username" type="username" class="form-control" placeholder="username" />
             <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
@@ -41,11 +43,11 @@
         </div><!-- /.social-auth-links -->
 
         <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="#" class="open_register_form">Register a new membership</a>
 
       </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
-
+</div>
 
         <!-- Javascript -->
         <script src="<?php echo base_url('')?>assets/js/jquery-1.11.1.min.js"></script>

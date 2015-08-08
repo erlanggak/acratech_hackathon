@@ -11,9 +11,21 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo base_url('')?>login">Login <span class="sr-only"></span></a></li>
-                <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
-                <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
+                <?php   
+                  if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
+                    <li class="active"><a href="<?php echo base_url('')?>logout">Logout <span class="sr-only"></span></a></li>
+                    <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
+                    <li><a href="<?php echo base_url('')?>beranda/destinasi">Destination Tour</a></li>
+                    <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
+                  <?php }
+                  else{ ?>
+                    <li class="active"><a href="<?php echo base_url('')?>login">Login <span class="sr-only"></span></a></li>
+                    <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
+                    <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
+                  <?php }
+                ?>   
+                
+                
               </ul>
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">

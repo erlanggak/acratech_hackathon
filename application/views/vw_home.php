@@ -17,14 +17,13 @@
     <div class="wrapper" >
 
       <?php 
-          $this->load->view('include/header2')
+          $this->load->view('include/header')
           ?>
       <!-- Full Width Column -->
       
-        
-      
+
       <div class="content-wrapper" >
-            
+         
       </div><!-- /.content-wrapper -->
       <?php $this->load->view('include/footer');
       ?>
