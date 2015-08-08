@@ -2,7 +2,7 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="../../index2.html" class="navbar-brand"><b>Jakarta</b>Tourism</a>
+              <a href="<?php echo base_url('')?>" class="navbar-brand"><b>Jakarta</b>Tourism</a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>
@@ -11,9 +11,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Login <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Peta</a></li>
-                <li><a href="#">Tentang Kami</a></li>
+                <li class="active"><a href="<?php echo base_url('')?>login">Login <span class="sr-only"></span></a></li>
+                <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
+                <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
               </ul>
               <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
@@ -21,8 +21,10 @@
                 </div>
               </form>
             </div>
+            <!--
             <!-- /.navbar-collapse -->
             <!-- Navbar Right Menu -->
+            <?php /* ?>
               <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                   
@@ -57,8 +59,10 @@
                       </li>
                     </ul>
                   </li>
+                
                 </ul>
               </div><!-- /.navbar-custom-menu -->
           </div><!-- /.container-fluid -->
+          <?php */ ?>
         </nav>
       </header>

@@ -3,44 +3,32 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
+    <style type="text/css">
+   
     
+   
+    </style>
     <?php
         $this->load->view('include/head'); 
     ?>
-    <style>
-      #map-canvas {
-        height: 100%;
-        margin: 10%;
-        padding: 0;
-      }
 
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-      var map;
-      function initialize() {
-        map = new google.maps.Map(document.getElementById('map-canvas'), {
-          zoom: 8,
-          center: {lat: -34.397, lng: 150.644}
-        });
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
   </head>
 <body class="skin-blue layout-top-nav">
-    
+    <div class="wrapper" >
 
       <?php 
           $this->load->view('include/header')
           ?>
-     
-        <div id="map-canvas"></div>
-     
+      <!-- Full Width Column -->
+      
+        
+      
+      <div class="content-wrapper back" >
+            <img  src="<?php echo base_url('')?>image/jakarta_map.png">
+      </div><!-- /.content-wrapper -->
       <?php $this->load->view('include/footer');
       ?>
- 
+    </div><!-- ./wrapper -->
 
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url('')?>plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>

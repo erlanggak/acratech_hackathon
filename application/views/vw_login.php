@@ -7,106 +7,44 @@
 
     <body>
 
-        <!-- Top content -->
-        <div class="top-content">
-        	
-            <div class="inner-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1><strong>Jakarta Tourism</strong> Login Form</h1>
-                            <div class="description">
-                            	<p>
-	                            	This is website for Jakarta tourism and culture.
-	                            	Presented by Acratech - Asian Creative Technology
-                            	</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                    <form id="login_form" action="<?php echo base_url('')?>login/auth_login" method="post">
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
-                        	<div class="form-top">
-                        		<div class="form-top-left">
-                        			<h3>Login to our site</h3>
-                            		<p>Enter your username and password to log on:</p>
-                        		</div>
-                        		<div class="form-top-right">
-                        			<i class="fa fa-lock"></i>
-                        		</div>
-                            </div>
-                            <div class="form-bottom">
-			                    
-			                    	<div class="form-group">
-			                    		<label class="sr-only" for="form-username">Username</label>
-			                        	<input value="" type="text" name="username" placeholder="Username..." class="form-username form-control" id="form-username">
-			                        </div>
-			                        <div class="form-group">
-			                        	<label class="sr-only" for="form-password">Password</label>
-			                        	<input value="" type="password" name="password" placeholder="Password..." class="form-password form-control" id="form-password">
-			                        </div>
-			                        <button type="submit" class="btn">Sign in!</button>
-			                   
-		                    </div>
-							<div>
-								<p>You don't have an account? <a href="#" class="open_register_form">Sign up here</a></p>
-							</div>
-                        </div>
-                    </form>
-                    <form id="register_form" style="display: none">
-                        <div class="col-sm-6 col-sm-offset-3 form-box">
-                            <div class="form-top">
-                                <div class="form-top-left">
-                                    <h3>Sign up for free!!!</h3>
-                                    <p>Fill in the blank :p:</p>
-                                </div>
-                                <div class="form-top-right">
-                                    
-                                </div>
-                            </div>
-                            <div class="form-bottom">
-                                <form role="form" action="" method="post" class="login-form">
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-email">Email</label>
-                                        <input type="text" name="form-email" placeholder="Email..." class="form-username form-control" id="form-username">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-username">Username</label>
-                                        <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="sr-only" for="form-password">Password</label>
-                                        <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-                                    </div>
-                                    <button type="submit" class="btn">Sign Up!</button>
-                                </form> 
-                            </div>
-                            <div>
-                                <a href="#" class="open_login_form">Back to login page</a>
-                            </div>
-                        </div>
-                    </form>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6 col-sm-offset-3 social-login">
-                        	<h3>...or login with:</h3>
-                        	<div class="social-login-buttons">
-	                        	<a class="btn btn-link-2" href="#">
-	                        		<i class="fa fa-facebook"></i> Facebook
-	                        	</a>
-	                        	<a class="btn btn-link-2" href="#">
-	                        		<i class="fa fa-twitter"></i> Twitter
-	                        	</a>
-	                        	<a class="btn btn-link-2" href="#">
-	                        		<i class="fa fa-google-plus"></i> Google Plus
-	                        	</a>
-                        	</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
+        <div class="login-box">
+      
+      <div class="login-box-body">
+        <p class="login-box-msg">Sign in to get more information</p>
+        <form action="<?php echo base_url('')?>login/auth_login" method="post">
+          <div class="form-group has-feedback">
+            <input name="username" type="username" class="form-control" placeholder="username" />
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input name="password" type="password" class="form-control" placeholder="Password" />
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">
+              <div class="checkbox icheck">
+                <label>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp<input type="checkbox"> Remember Me
+                </label>
+              </div>
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+              <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+            </div><!-- /.col -->
+          </div>
+        </form>
+
+        <div class="social-auth-links text-center">
+          <p>- OR -</p>
+          <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using Facebook</a>
+          <a href="#" class="btn btn-block btn-social btn-google-plus btn-flat"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
+        </div><!-- /.social-auth-links -->
+
+        <a href="#">I forgot my password</a><br>
+        <a href="register.html" class="text-center">Register a new membership</a>
+
+      </div><!-- /.login-box-body -->
+    </div><!-- /.login-box -->
 
 
         <!-- Javascript -->
