@@ -15,7 +15,7 @@
                   if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
                     <li class="active"><a href="<?php echo base_url('')?>logout">Logout <span class="sr-only"></span></a></li>
                     <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
-                    <li><a href="<?php echo base_url('')?>beranda/destinasi">Destination Tour</a></li>
+                    <li><a href="<?php echo base_url('')?>home/destinasi">Destination Tour</a></li>
                     <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
                   <?php }
                   else{ ?>
@@ -27,11 +27,7 @@
                 
                 
               </ul>
-              <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="navbar-search-input" placeholder="Search" />
-                </div>
-              </form>
+              
             </div>
             <!--
             <!-- /.navbar-collapse -->

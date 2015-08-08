@@ -25,7 +25,7 @@
 			$xml=simplexml_load_file($string) or die("Error: Cannot create object");
 			for($count=0; $count < 100; $count++)
 			{
-				echo "<a href=''>".$xml->result->{'item' . $count}->name ."</a>". "<br>";
+				echo "<a href='http://localhost/acratech_hackathon/detail?id=".$count."'>".$xml->result->{'item' . $count}->name ."</a>". "<br>";
 				//echo $xml->result->{'item' . $count}->address . "<br>";
 			}
 	  ?>	

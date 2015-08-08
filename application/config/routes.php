@@ -53,5 +53,6 @@ $route['default_controller'] = 'beranda';
 $route['beranda'] = 'beranda';
 $route['login'] = 'login';
 $route['coffeeshop'] = 'coffeeshop';
+$route['detail'] = 'detail';
 $route['404_override'] = '';
 //$route['translate_uri_dashes'] = FALSE;
