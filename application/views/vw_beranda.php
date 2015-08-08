@@ -3,56 +3,44 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-
+    
     <?php
         $this->load->view('include/head'); 
     ?>
+    <style>
+      #map-canvas {
+        height: 100%;
+        margin: 10%;
+        padding: 0;
+      }
+
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script>
+      var map;
+      function initialize() {
+        map = new google.maps.Map(document.getElementById('map-canvas'), {
+          zoom: 8,
+          center: {lat: -34.397, lng: 150.644}
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+  </head>
 <body class="skin-blue layout-top-nav">
-    <div class="wrapper">
+    
 
       <?php 
           $this->load->view('include/header')
           ?>
-      <!-- Full Width Column -->
-      <div class="content-wrapper">
-        <div class="container">
-          <!-- Content Header (Page header) -->
-          <section class="content-header">
-            <h1>
-              Top Navigation
-              <small>Example 2.0</small>
-            </h1>
-            <ol class="breadcrumb">
-              <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-              <li><a href="#">Layout</a></li>
-              <li class="active">Top Navigation</li>
-            </ol>
-          </section>
-
-          <!-- Main content -->
-          <section class="content">
-            <div class="callout callout-info">
-              <h4>Tip!</h4>
-              <p>Add the layout-top-nav class to the body tag to get this layout. This feature can also be used with a sidebar! So use this class if you want to remove the custom dropdown menus from the navbar and use regular links instead.</p>
-            </div>
-            <div class="callout callout-danger">
-              <h4>Warning!</h4>
-              <p>The construction of this layout differs from the normal one. In other words, the HTML markup of the navbar and the content will slightly differ than that of the normal layout.</p>
-            </div>
-            <div class="box box-default">
-              <div class="box-header with-border">
-                <h3 class="box-title">Blank Box</h3>
-              </div>
-              <div class="box-body">
-                The great content goes here
-              </div><!-- /.box-body -->
-            </div><!-- /.box -->
-          </section><!-- /.content -->
-        </div><!-- /.container -->
-      </div><!-- /.content-wrapper -->
+     
+        <div id="map-canvas"></div>
+     
       <?php $this->load->view('include/footer');
       ?>
-    </div><!-- ./wrapper -->
+ 
 
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url('')?>plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
