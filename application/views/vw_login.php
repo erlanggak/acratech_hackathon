@@ -6,7 +6,7 @@
     ?>
 
     <body class="skin-blue layout-top-nav login-page"">
-      
+      <div class="wrapper">
         <?php 
           $this->load->view('include/header')
           ?>
@@ -51,7 +51,7 @@
    <div id="register_form" class="register-box" style="display:none">
       <div class="login-box-body">
         <p class="login-box-msg">Register a new membership</p>
-        <form  action="../../index.html" method="post">
+        <form  action="" method="post">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" placeholder="Full name" />
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
@@ -91,7 +91,7 @@
         <a href="#" class="open_login_form text-center">I already have a membership</a>
       </div><!-- /.form-box -->
     </div><!-- /.register-box -->
-    
+    </div>
 
         <!-- Javascript -->
         <script src="<?php echo base_url('')?>dist/js/jquery-1.11.1.min.js"></script>
@@ -120,7 +120,7 @@
             })
         </script>
         <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
+            <script src="<?php echo base_url('')?>assets/js/placeholder.js"></script>
         <![endif]-->
 
     </body>

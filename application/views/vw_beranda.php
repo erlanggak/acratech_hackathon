@@ -12,12 +12,19 @@
 
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
-
     <script>
+/*
+ * This example enables Sign In by loading the Maps API with the signed_in
+ * parameter set to true. For example:
+ *
+ * https://maps.googleapis.com/maps/api/js?signed_in=true&v=3.exp
+ *
+ */
+
 function initialize() {
   var mapOptions = {
     zoom: 11,
-    center: new google.maps.LatLng(-6.211544, 106.845172)
+    center: {lat: -6.211544, lng: 106.845172}
   };
   var map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
