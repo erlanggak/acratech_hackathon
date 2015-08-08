@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = 'http://localhost/acratech_hackathon';
+$config['base_url'] = 'http://192.168.0.10/acratech_hackathon';
 
 /*
 |--------------------------------------------------------------------------
