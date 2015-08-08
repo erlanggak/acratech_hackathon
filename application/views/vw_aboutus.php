@@ -32,14 +32,6 @@
           $this->load->view('include/header')
           ?>
       <!-- Full Width Column -->
-	  <div id="sharebutton">
-		<span class='st_twitter' displayText='Tweet'></span>
-		<span class='st_facebook' displayText='Facebook'></span>
-		<span class='st_linkedin' displayText='LinkedIn'></span>
-		<span class='st_pinterest' displayText='Pinterest'></span>
-		<span class='st_whatsapp' displayText='WhatsApp'></span>
-		<span class='st_email' displayText='Email'></span>
-	  </div>
 	  <div id="info">
 		<img src="<?php echo base_url('') ?>image/acratech_logo.png"></img>
 		<p>
