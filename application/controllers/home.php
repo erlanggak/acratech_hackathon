@@ -11,7 +11,7 @@ class Home extends CI_Controller {
 	public function index()
 	{
 		if ($this->session->userdata('logged_in')) {
-			$data['title'] = "Login Sukses to Jakarta Tourism";
+			$data['title'] = "Welcome to Jakarta Tourism";
 			$this->load->view('vw_home.php',$data);
 		} else {
         	redirect('login');
