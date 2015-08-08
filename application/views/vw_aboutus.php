@@ -10,11 +10,14 @@
 		background-color: white;
 		padding: 10px;
 	}
-	.profile {
+	.profile {		
 		margin: auto;
 		width: 60%;
 		background-color: white;
 		padding: 20px;
+	}
+	img {
+		padding: 10px;
 	}
     </style>
     <?php
@@ -37,17 +40,43 @@
 		</p>
 	  
 	  <div class = "profile">
-		<img src="<?php echo base_url('') ?>image/acratech_logo.png"></img>
-		<b>Erlangga Krisnamukti<b>
-		
+		<img src="<?php echo base_url('') ?>image/erlangga.png"></img>
+		<b>Erlangga Krisnamukti</b>
+		<br>
+		-Surabaya, May 12 1993
+		<br>
+		-Currently finishing his final paper at Information Technology - Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia.
+		<br>
+		-Favorite Programming Language:  Java.
+		<br>
+		<a href="https://twitter.com/iamerlanggakm" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @iamerlanggakm</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	  </div>
 	  <div class = "profile">
-		<b>Dwi Al Aji Suseno<b>
-		
+		<img src="<?php echo base_url('') ?>image/aji.png"></img>
+		<b>Dwi Al Aji Suseno</b>
+		<br>
+		-Banyuwangi, June 19 1993
+		<br>
+		-Currently studying Information Technology at Institut Teknologi Sepuluh Nopember, Surabaya, Indonesia.
+		<br>
+		-Favorite Programming Language: PHP.
+		<br>
+		<a href="https://twitter.com/dwisuseno_" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @dwisuseno_</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	  </div>
 	  <div class = "profile">
-		<b>Naasa Fikri<b>
-		
+		<img src="<?php echo base_url('') ?>image/naasa.png"></img>
+		<b>Naasa Fikri</b>
+		<br>
+		-Ponorogo, September 28 1993
+		<br>
+		-Currently studying Computer Engineering at University of Missouri, Columbia, USA.
+		<br>
+		-Favorite Programming Language: C, C++, C#.
+		<br>
+		<a href="https://twitter.com/xNAFx" class="twitter-follow-button" data-show-count="true" data-size="small">Follow @xNAFx</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 	  </div>
 	  </div>
       <?php 
