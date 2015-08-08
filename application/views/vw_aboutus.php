@@ -37,6 +37,7 @@
 		</p>
 	  
 	  <div class = "profile">
+		<img src="<?php echo base_url('') ?>image/acratech_logo.png"></img>
 		<b>Erlangga Krisnamukti<b>
 		
 	  </div>
