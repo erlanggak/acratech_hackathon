@@ -2,7 +2,11 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
+<<<<<<< HEAD
               <a href="<?php echo base_url('')?>" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png" height = "27px"></img></a>
+=======
+              <a href="<?php echo base_url('')?>" class="navbar-brand"><b>Ba</b>per</a>
+>>>>>>> 516f18439054f63b33fae4312205352c8401865a
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>
