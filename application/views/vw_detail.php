@@ -69,8 +69,7 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
-<<<<<<< HEAD
-=======
+
     <div class="wrapper" id="content">
 
 		<?php 
