@@ -115,6 +115,31 @@
 				<span class='st_email_large'></span>
 				</div>
 
+<<<<<<< HEAD
+	<div>
+		<form method="post" action="detail/input"> 
+			<input type="textarea" name="comment" placeholder="Your comment here...">
+			<input type="hidden" name="user" value="<?php echo $_SESSION['username']?>">
+			<input type="hidden" name="destination" value="<?php echo $xml->result->{'item' .$_GET['id']}->name?>">
+			<form id="ratingsForm">
+				<div class="stars">
+					<span>
+					<input type="radio" name="rate" class="star-1" id="star-1" />
+					<label class="star-1" for="star-1"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="rate" class="star-2" id="star-2" />
+					<label class="star-2" for="star-2"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="star" class="star-3" id="star-3" />
+					<label class="star-3" for="star-3"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="rate" class="star-4" id="star-4" />
+					<label class="star-4" for="star-4"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="rate" class="star-5" id="star-5" />
+					<label class="star-5" for="star-5"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					</span>
+=======
 				<div>
 					<form method="post" action="detail/input"> 
 						<input type="textarea" name="comment" placeholder="Your comment here...">
@@ -144,6 +169,7 @@
 					</form>
 				</div>
 				</div>
+>>>>>>> 64da203e8a653e0b105a7dcbe4e497739a51e7bc
 				</div>
 				<div>instagram feed
 					<div id="instafeed">

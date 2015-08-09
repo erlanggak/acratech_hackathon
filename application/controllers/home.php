@@ -6,10 +6,19 @@ class Home extends CI_Controller {
 	    parent::__construct();
 	    $this->load->library('session');
 	    $this->load->model('auth');
+<<<<<<< HEAD
+		$this->load->model('m_user');
+		$this->load->model('md_rencana');
+=======
+	    $this->load->model('md_timeline');
+>>>>>>> 64da203e8a653e0b105a7dcbe4e497739a51e7bc
 	    $this->load->helper(array('form', 'url'));
   	}
 	public function index(){
 		if ($this->session->userdata('logged_in')) {
+			$username = $this->session->userdata('username');
+			$id_user = $this->m_user->getId($username);
+			$data['rencana'] = $this->md_rencana->getAll($id_user);
 			$data['title'] = "Welcome to Jakarta Tourism";
 			$this->load->view('vw_home',$data);
 		} else {
@@ -26,9 +35,11 @@ class Home extends CI_Controller {
     	}
 	}
 
+
 	public function timeline(){
 		if ($this->session->userdata('logged_in')) {
 			$data['title'] = "Curhat di Timeline | Baper";
+			$data['curhatan'] = $this->md_timeline->load();
 			$this->load->view('vw_timeline',$data);
 		} else {
         	redirect('login');
@@ -79,4 +90,15 @@ class Home extends CI_Controller {
         	redirect('login');
     	}
 	}
+	
+	public function hapus_rencana(){
+		if ($this->session->userdata('logged_in')) {
+			$data['rencana'] = $this->input->post('rencana');
+			$this->md_rencana->hapus_rencana($rencana);
+			redirect('home');
+		} else {
+        	redirect('login');
+    	}
+	}
+
 }

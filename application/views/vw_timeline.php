@@ -31,38 +31,44 @@
               <!-- The time line -->
               <ul class="timeline">
                 <!-- timeline time label -->
+                <?php 
+                  foreach($curhatan as $row)
+                  {
+                    
+                    echo '
                 <li class="time-label">
                   <span class="bg-red">
-                    <?php $today = date("l, d F Y");              
-echo $today; ?>
+                    '.$row->time.'
                   </span>
                 </li>
                 <!-- /.timeline-label -->
                 <!-- timeline item -->
-                <li>
-                  <i class="fa fa-user bg-aqua"></i>
-                  <div class="timeline-item">
-                    <span class="time"><i class="fa fa-clock-o"></i> 12:05</span>
-                    <h3 class="timeline-header"><a href="#">Support Team</a> sent you an email</h3>
-                    <div class="timeline-body">
-                      Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
-                      weebly ning heekya handango imeem plugg dopplr jibjab, movity
-                      jajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodle
-                      quora plaxo ideeli hulu weebly balihoo...
-                    </div>
-                    <div class="timeline-footer">
-                      <a class="btn btn-primary btn-xs">Read more</a>
-                      <a class="btn btn-danger btn-xs">Delete</a>
-                    </div>
-                  </div>
-                </li>
+                
+                    <li>
+                      <i class="fa fa-user bg-aqua"></i>
+                      <div class="timeline-item">
+                        
+                        <h3 class="timeline-header"><a href="#">'.$row->user.'</a> review on '.$row->destination.'</h3>
+                        <div class="timeline-body">
+                          '.$row->comment.'
+                        </div>
+                        <div class="timeline-footer"></div>
+                      </div>
+                    </li>
+                    <!-- END timeline item -->
+                    <!-- timeline item -->
+                    ';
+                  }
+                ?>
+                
                 <!-- END timeline item -->
                 <!-- timeline item -->
                 
-                <li>
-                  <i class="fa fa-clock-o bg-gray"></i>
-                </li>
               </ul>
+              <center>
+              <a class="btn btn-primary btn-xs">Prev</a>
+              <a class="btn btn-primary btn-xs">Next</a>
+              </center>
             </div><!-- /.col -->
           </div><!-- /.row -->
         </section>
