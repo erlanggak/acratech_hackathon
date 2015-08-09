@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <style type="text/css">
     </style>
-	
     <?php
         $this->load->view('include/head'); 
 		$string = base_url('')."/xml/coffee_shop.xml";
@@ -14,7 +13,7 @@
 		$arr = explode(' ',trim($coffeeShopName));
 		$hashtag = $arr[0].$arr[1];
     ?>
-
+	
 	<style>
 	
 	#content {
@@ -34,6 +33,7 @@
       }
 	#instafeed {
 		white-space:nowrap;
+		width: inherit;
 	}
 	#bottom {
 		float: bottom;
@@ -50,6 +50,7 @@
 	<script type="text/javascript">
 		var feed = new Instafeed({
 			get: "tagged",
+			limit: "4",
 			tagName: "<?php echo $hashtag?>",
 			clientId: "14fe48638b634d2c9a0bf577fa19ec62"
 		});
@@ -144,17 +145,17 @@
 				</div>
 				</div>
 				</div>
-
-				<div>instagram feed</div>
-				<div id="instafeed">	
+				<div>instagram feed
+					<div id="instafeed">
+					</div>
 				</div>
 			</div>
 		</div>
 		</div>
 	</div>
-	
 	<?php $this->load->view('include/footer');
     ?>
+
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url('')?>plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
     <!-- Bootstrap 3.3.2 JS -->
@@ -167,5 +168,10 @@
     <script src="<?php echo base_url('')?>dist/js/app.min.js" type="text/javascript"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="<?php echo base_url('')?>dist/js/demo.js" type="text/javascript"></script>
+	<script>
+	  $(function() {
+		$(".rslides").responsiveSlides();
+	  });
+	</script>
   </body>
 </html>
