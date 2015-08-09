@@ -13,7 +13,11 @@ class Coffeeshop extends CI_Controller {
 
 	public function index()
 	{
+        if ($this->session->userdata('logged_in')) {
 		$data['title'] = "Coffee Shop in Jakarta";
 		$this->load->view('vw_coffeeshop.php',$data);
+        } else {
+            redirect('login');
+        }
 	}
 }
