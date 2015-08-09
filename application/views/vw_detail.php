@@ -70,6 +70,7 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
+<<<<<<< HEAD
 
     <div class="wrapper" id="content">
 	<?php 
@@ -78,6 +79,16 @@
 	<?php 
 //>>>>>>> 8f79e803de84706783a330ee0242bf87c68b103d
 			$this->load->view('include/header');
+=======
+    <div class="wrapper" id="content">
+
+	
+
+			
+
+	<?php $this->load->view('include/header')
+
+>>>>>>> e53c660321f9a12ad38466e825e31765db3cd137
 	?>
 	
 	<div class="row">
