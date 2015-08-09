@@ -45,7 +45,7 @@
                   { ?>
                       <tr>
                         <td><?php echo $count+1 ?></td>
-                        <td><a href="<?php echo base_url('')?>detail?id=$count>$xml->result->{'item' .$count}->name?>"><?php echo $xml->result->{'item' .$count}->name ?></a></td>
+                        <td><a href="<?php echo base_url('')?>detail?id=<?php echo $count?>"><?php echo $xml->result->{'item' .$count}->name ?></a></td>
                       </tr>
                     <?php  }
                 ?> 
