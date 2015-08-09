@@ -69,45 +69,16 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
+<<<<<<< HEAD
 
     <div class="wrapper" id="content">
 
 		<?php 
-			$this->load->view('include/header')
-		?>
-	  <!-- Full Width Column -->
-	  
-	  <div class="content-wrapper" >
-			<div id="map-canvas">
-			</div>
-			<div id="details">
-			<?php
-			echo "Name\t: ". $xml->result->{'item' .$_GET['id']}->name . "<br>";
-			echo "Longitude\t: ". $xml->result->{'item' .$_GET['id']}->longitude. "<br>";
-			echo "Latitude\t: ". $xml->result->{'item' .$_GET['id']}->latitude. "<br>";
-			echo "Village\t: ". $xml->result->{'item' .$_GET['id']}->village. "<br>";
-			echo "Subdistrict\t: ". $xml->result->{'item' .$_GET['id']}->subdistrict. "<br>";
-			echo "District\t: ". $xml->result->{'item' .$_GET['id']}->district. "<br>";
-			echo "Address\t: ". $xml->result->{'item' .$_GET['id']}->address. "<br>";
-			echo "Telephone\t: ". $xml->result->{'item' .$_GET['id']}->telephone. "<br>";
-			?>
-<<<<<<< HEAD
-			<form method="post" action="<?=base_url()?>detail/input"> 
-			
-			<input type="text" name="input_comment" placeholder="Your comment here...">
-			<input type="submit" value="Comment" name="input_comment"/>
-			</form>
 =======
-			</div>
->>>>>>> 4bda9a439235e6aa20528d554dfe81c443d3f674
-			
-		</div>
-	  <!-- /.content-wrapper -->
-      
-    </div><!-- ./wrapper -->
-	
-	
->>>>>>> b2639cd8365bd3c76cd4a6fccc9e7e3da45d39a2
+	<?php 
+>>>>>>> 61a8cbe544bce88f17b0623ff8e26dd3cff4ef31
+			$this->load->view('include/header')
+	?>
 	
 	<div class="row">
 	<div id="map-canvas">
