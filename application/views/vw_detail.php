@@ -23,6 +23,10 @@
 	#sharebutton {
 		padding: 10px;
 	}
+	#usermenu {
+		float: left;
+		padding: 10px;
+	}
     #map-canvas {
         height: 320px;
 		width: 320px;
@@ -96,8 +100,7 @@
 		echo "Telephone\t: ". $xml->result->{'item' .$_GET['id']}->telephone. "<br>";
 		?>
 	</div>
-	</div>
-	<div class="row">
+	<div id="usermenu">
 	<div id="sharebutton">
 	<span class='st_facebook_large'></span>
 	<span class='st_twitter_large'></span>
@@ -137,12 +140,13 @@
 			<input type="submit" value="Comment" name="input"/>
 		</form>
 	</div>
-	
+	</div>
+	</div>
+
 	<div>instagram feed</div>
 	<div id="instafeed">	
 	</div>
 	
-	</div>
 	<?php $this->load->view('include/footer');
     ?>
     <!-- jQuery 2.1.4 -->
