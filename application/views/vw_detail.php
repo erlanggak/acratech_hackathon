@@ -57,11 +57,10 @@
 			echo "Address\t: ". $xml->result->{'item' .$_GET['id']}->address. "<br>";
 			echo "Telephone\t: ". $xml->result->{'item' .$_GET['id']}->telephone. "<br>";
 			?>
-			<form method="post" action="<?=base_url()?>user/input"> 
-			
+			<form method="post" action="<?=base_url()?>detail/input"> 
 			
 			<input type="text" name="input_comment" placeholder="Your comment here...">
-			<input type="submit" value="Comment" name="input"/>
+			<input type="submit" value="Comment" name="input_comment"/>
 			</form>
 			
 		</div>

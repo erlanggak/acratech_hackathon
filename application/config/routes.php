@@ -54,5 +54,6 @@ $route['beranda'] = 'beranda';
 $route['login'] = 'login';
 $route['coffeeshop'] = 'coffeeshop';
 $route['detail'] = 'detail';
+$route['comment'] = 'detail/input'
 $route['404_override'] = '';
 //$route['translate_uri_dashes'] = FALSE;
