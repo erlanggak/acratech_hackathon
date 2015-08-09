@@ -39,7 +39,8 @@
 		padding: 20px;
 	}
     </style>
-	<script type="text/javascript" src="plugins/instafeed/instafeed.js"></script>
+		
+	<script type="text/javascript" src="plugins/instafeed/instafeed.js"></script>	
 	<script type="text/javascript">
 		var feed = new Instafeed({
 			get: "tagged",
@@ -107,7 +108,9 @@
 	</div>
 	
 	<div>instagram feed</div>
-	<div id="instafeed"> </div>
+	<div id="instafeed">	
+	</div>
+	
 	</div>
 	<?php $this->load->view('include/footer');
     ?>
