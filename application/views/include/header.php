@@ -14,8 +14,9 @@
               <ul class="nav navbar-nav">
                 <?php   
                   if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
-                    <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
-                    <li><a href="<?php echo base_url('')?>home/destinasi">Destination Tour</a></li>
+                    <li><a href="<?php echo base_url('')?>beranda/map">Find Places</a></li>
+                    <li><a href="<?php echo base_url('')?>home/timeline">Timeline</a></li>
+                    <li><a href="<?php echo base_url('')?>home/destinasi">Destinations</a></li>
                     <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
                   <?php }
                   else{ ?>
@@ -46,7 +47,7 @@
                     <!-- Menu Toggle Button -->
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                       <!-- The user image in the navbar-->
-                      <img src="<?php echo base_url('')?>dist/img/user2-160x160.jpg" class="user-image" alt="User Image" />
+                      <img src="<?php echo base_url('')?>image/avatar5.png" class="user-image" alt="User Image" />
                       <!-- hidden-xs hides the username on small devices so only the image appears. -->
                       <span class="hidden-xs"><?php echo $_SESSION['username']?></span>
                     </a>
