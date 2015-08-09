@@ -118,19 +118,19 @@
 			<form id="ratingsForm">
 				<div class="stars">
 					<span>
-					<input type="radio" name="star" class="star-1" id="star-1" />
+					<input type="radio" name="rate" class="star-1" id="star-1" />
 					<label class="star-1" for="star-1"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
 					<br>
-					<input type="radio" name="star" class="star-2" id="star-2" />
+					<input type="radio" name="rate" class="star-2" id="star-2" />
 					<label class="star-2" for="star-2"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
 					<br>
 					<input type="radio" name="star" class="star-3" id="star-3" />
 					<label class="star-3" for="star-3"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
 					<br>
-					<input type="radio" name="star" class="star-4" id="star-4" />
+					<input type="radio" name="rate" class="star-4" id="star-4" />
 					<label class="star-4" for="star-4"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
 					<br>
-					<input type="radio" name="star" class="star-5" id="star-5" />
+					<input type="radio" name="rate" class="star-5" id="star-5" />
 					<label class="star-5" for="star-5"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
 					</span>
 				</div>
