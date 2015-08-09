@@ -71,9 +71,13 @@
     </head>
 <body class="skin-blue layout-top-nav">
     <div class="wrapper" id="content">
+<<<<<<< HEAD
 	<?php 
 
 			$this->load->view('include/header')
+=======
+	<?php $this->load->view('include/header')
+>>>>>>> 7889461210b93819831cd1f9366af92067c35eaa
 	?>
 	
 	<div class="row">
