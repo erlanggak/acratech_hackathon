@@ -113,7 +113,7 @@
 	<div>
 		<form method="post" action="detail/input"> 
 			<input type="textarea" name="comment" placeholder="Your comment here...">
-			<input type="hidden" name="user" value="<?php echo $_SESSION['username'];?>">
+			<input type="hidden" name="user" value="<?php echo $_SESSION['username']?>">
 			<input type="hidden" name="destination" value="<?php echo $xml->result->{'item' .$_GET['id']}->name?>">
 			<form id="ratingsForm">
 				<div class="stars">

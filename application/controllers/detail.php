@@ -15,7 +15,7 @@ class Detail extends CI_Controller {
 	public function index()
 	{
 		$data['title'] = "Place Details";
-		$this->load->view('vw_detail.php',$data);
+		$this->load->view('vw_detail',$data);
 	}
 
 	public function input()
