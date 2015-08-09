@@ -19,8 +19,26 @@ class Home extends CI_Controller {
 
 	public function destinasi(){
 		if ($this->session->userdata('logged_in')) {
-			$data['title'] = "Tour Destination Jakarta Tourism";
+			$data['title'] = "Tour Destination | Baper";
 			$this->load->view('vw_destinasi',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
+
+	public function timeline(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "Curhat di Timeline | Baper";
+			$this->load->view('vw_timeline',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
+
+	public function list_cafe(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "List Cafe | Baper";
+			$this->load->view('vw_list_cafe',$data);
 		} else {
         	redirect('login');
     	}
