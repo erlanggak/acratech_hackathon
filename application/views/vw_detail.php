@@ -4,7 +4,9 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style type="text/css">
+	
     </style>
+	
     <?php
         $this->load->view('include/head'); 
 		$string = base_url('')."/xml/coffee_shop.xml";
@@ -15,6 +17,7 @@
     ?>
 
 	<style>
+	
 	#content {
 		background-color: white;
 	}
@@ -70,32 +73,20 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
-<<<<<<< HEAD
-
     <div class="wrapper" id="content">
-	<?php 
-
-
-	<?php 
-//>>>>>>> 8f79e803de84706783a330ee0242bf87c68b103d
-			$this->load->view('include/header');
-=======
-    <div class="wrapper" id="content">
-
 	
-
-			
-
-	<?php $this->load->view('include/header')
-
->>>>>>> e53c660321f9a12ad38466e825e31765db3cd137
+	<?php 
+		$this->load->view('include/header');
 	?>
+    
+	<div class="wrapper" id="content">
 	
 	<div class="row">
 	<div id="map-canvas">
 	</div>
 	<div id="details">
 		<?php
+		//echo $_SESSION['username'];
 		echo "Name\t: ". $xml->result->{'item' .$_GET['id']}->name . "<br>";
 		echo "Longitude\t: ". $xml->result->{'item' .$_GET['id']}->longitude. "<br>";
 		echo "Latitude\t: ". $xml->result->{'item' .$_GET['id']}->latitude. "<br>";
@@ -118,11 +109,25 @@
 	</div>
 
 	<div>
-		<form method="post" action="<?echo base_url('')?>detail/input"> 
+		<form method="post" action="detail/input"> 
 			<input type="textarea" name="comment" placeholder="Your comment here...">
-			<input type="hidden" name="user" value="'"<?php echo $_SESSION['username']?>"'">
-			<input type="hidden" name="destination" value="'"<?php echo $xml->result->{'item' .$_GET['id']}->name?>"'">
-			<!--<input type="hidden" name="rate" value="'"<?php echo $_SESSION['username']?>"'">-->
+			<input type="hidden" name="user" value="<?php echo $_SESSION['username'];?>">
+			<input type="hidden" name="destination" value="<?php echo $xml->result->{'item' .$_GET['id']}->name?>">
+			<div style="margin-left:0%">
+				<input type="radio" name="rate" class="minimal" value ="1" id="star-1"/>
+				<label class="star-1" for="star-1">1</label>
+				<input type="radio" name="rate" class="star-2" value ="2" id="star-2"/>
+				<label class="star-2" for="star-2">2</label>
+				<input type="radio" name="rate" class="star-3" value ="3" id="star-3"/>
+				<label class="star-3" for="star-3">3</label>
+				<input type="radio" name="rate" class="star-4" value ="4" id="star-4"/>
+				<label class="star-4" for="star-4">4</label>
+				<input type="radio" name="rate" class="star-5" value ="5" id="star-5"/>
+				<label class="star-5" for="star-5">5</label>
+				<span></span>
+				
+			</div>
+			<!--<input type="hidden" name="rate" value="">-->
 			<!--<input type="hidden" name="time" value="">-->
 			<input type="submit" value="Comment" name="input"/>
 		</form>
