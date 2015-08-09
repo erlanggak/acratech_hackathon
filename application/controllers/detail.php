@@ -14,12 +14,17 @@ class Detail extends CI_Controller {
 
 	public function index()
 	{
+		if ($this->session->userdata('logged_in')) {
 		$data['title'] = "Place Details";
 		$this->load->view('vw_detail',$data);
+		} else {
+        	redirect('login');
+    	}
 	}
 
 	public function input()
 	{
+		if ($this->session->userdata('logged_in')) {
 		$user =($this->input->post('user'));
         $destination = ($this->input->post('destination'));
         $rate = ($this->input->post('rate'));
@@ -27,5 +32,8 @@ class Detail extends CI_Controller {
 		$time = date("l, d F Y");
 		$this->md_insert_comment->insert($user, $destination, $rate, $comment, $time);
         redirect(base_url("home"));
+        } else {
+        	redirect('login');
+    	}
 	}
 }

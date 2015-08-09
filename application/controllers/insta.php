@@ -7,7 +7,11 @@ class Insta extends CI_Controller {
   	}
 	public function index()
 	{
+		if ($this->session->userdata('logged_in')) {
 		$data['title'] = "Instagram - Beranda Jakarta Tourism";
 		$this->load->view('vw_insta.php',$data);
+		} else {
+        	redirect('login');
+    	}
 	}
 }
