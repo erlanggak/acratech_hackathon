@@ -43,4 +43,13 @@ class Home extends CI_Controller {
         	redirect('login');
     	}
 	}
+
+	public function error_404(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "Sorry | Baper";
+			$this->load->view('vw_404',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
 }

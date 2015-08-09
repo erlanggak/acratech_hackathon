@@ -21,9 +21,6 @@
                   <?php }
                   else{ ?>
                     
-                    <li class="active"><a href="<?php echo base_url('')?>login">Login <span class="sr-only"></span></a></li>
-                    <li><a href="<?php echo base_url('')?>beranda/map">Map</a></li>
-                    <li><a href="<?php echo base_url('')?>beranda/aboutus">About Us</a></li>
                     
                   <?php }
                 ?>   

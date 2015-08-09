@@ -69,14 +69,14 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
-<<<<<<< HEAD
+
 
     <div class="wrapper" id="content">
 
-		<?php 
-=======
+	
+
 	<?php 
->>>>>>> 61a8cbe544bce88f17b0623ff8e26dd3cff4ef31
+
 			$this->load->view('include/header')
 	?>
 	
