@@ -54,7 +54,8 @@
               </div>
             </div><!-- ./col -->
             <?php } else {?>
-            <div class="col-lg-3 col-xs-6" >
+            
+            <div class="col-md-6 col-md-offset-2" style="margin:0 auto">
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
@@ -67,7 +68,7 @@
                 <a href="<?php echo base_url('')?>login" class="small-box-footer">continue <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
-            <div class="col-lg-3 col-xs-6">
+            <div class="col-md-6 col-md-offset-2" style="margin:0 auto">
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
@@ -79,16 +80,13 @@
                 </div>
                 <a href="<?php echo base_url('')?>beranda/aboutus" class="small-box-footer">find more <i class="fa fa-arrow-circle-right"></i></a>
               </div>
-            </div><!-- ./col -->
+            </div>
+          
+          </div><!-- ./col -->
           <?php } ?>
-          <h1 style="color:#00F; font-family:verdana;">Beranda Aplikasi Pariwisata & Rekreasi</h1>
           </div><!-- /.row -->
           <!-- Main row -->
-          <div class="row">
-
-            <img id="enjoy" src="<?php echo base_url('')?>image/enjoy.png" height="250px">
-            
-          </div>
+          
 
         </section><!-- /.content -->
       </div><!-- /.content-wrapper -->

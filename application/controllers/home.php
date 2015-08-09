@@ -6,12 +6,12 @@ class Home extends CI_Controller {
 	    parent::__construct();
 	    $this->load->library('session');
 	    $this->load->model('auth');
-<<<<<<< HEAD
+
 		$this->load->model('m_user');
 		$this->load->model('md_rencana');
-=======
+
 	    $this->load->model('md_timeline');
->>>>>>> 64da203e8a653e0b105a7dcbe4e497739a51e7bc
+
 	    $this->load->helper(array('form', 'url'));
   	}
 	public function index(){
