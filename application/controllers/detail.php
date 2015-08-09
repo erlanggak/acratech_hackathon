@@ -20,11 +20,11 @@ class Detail extends CI_Controller {
 	public function input()
 	{
 		$user =($this->input->post('user'));
-        $username = ($this->input->post('destination'));
-        $password = ($this->input->post('rate'));
+        $destination = ($this->input->post('destination'));
+        //$rate = ($this->input->post('rate'));
 		$comment = ($this->input->post('comment'));
-		
-		$this->Model_user->insert($user, $username, $password, $comment);
+		$time = date("l, d F Y");
+		$this->Model_user->insert($user, $destination, $comment, $time);
         redirect(base_url("home"));
 	}
 }

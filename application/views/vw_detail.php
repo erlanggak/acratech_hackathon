@@ -70,19 +70,14 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
-<<<<<<< HEAD
-
 
     <div class="wrapper" id="content">
-
-	
-
 	<?php 
 
-=======
+
 	<?php 
->>>>>>> 8f79e803de84706783a330ee0242bf87c68b103d
-			$this->load->view('include/header')
+//>>>>>>> 8f79e803de84706783a330ee0242bf87c68b103d
+			$this->load->view('include/header');
 	?>
 	
 	<div class="row">
@@ -113,7 +108,11 @@
 
 	<div>
 		<form method="post" action="<?echo base_url('')?>detail/input"> 
-			<input type="textarea" name="input_comment" placeholder="Your comment here...">
+			<input type="textarea" name="comment" placeholder="Your comment here...">
+			<input type="hidden" name="user" value="'"<?php echo $_SESSION['username']?>"'">
+			<input type="hidden" name="destination" value="'"<?php echo $xml->result->{'item' .$_GET['id']}->name?>"'">
+			<!--<input type="hidden" name="rate" value="'"<?php echo $_SESSION['username']?>"'">-->
+			<!--<input type="hidden" name="time" value="">-->
 			<input type="submit" value="Comment" name="input"/>
 		</form>
 	</div>
