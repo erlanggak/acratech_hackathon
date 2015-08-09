@@ -16,5 +16,15 @@ class Detail extends CI_Controller {
 		$data['title'] = "Place Details";
 		$this->load->view('vw_detail.php',$data);
 	}
-	
+
+	public function input()
+	{
+		$user =($this->input->post('user'));
+        $username = ($this->input->post('destination'));
+        $password = ($this->input->post('rate'));
+		$comment = ($this->input->post('comment'));
+		
+		$this->Model_user->insert($user, $username, $password, $comment);
+          redirect(base_url("user/about"));
+	}
 }
