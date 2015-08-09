@@ -17,7 +17,6 @@
 	<style>
 	#content {
 		background-color: white;
-		max-height: 400px;
 	}
 	#sharebutton {
 		padding: 10px;
@@ -92,6 +91,9 @@
 	  <!-- /.content-wrapper -->
       
     </div><!-- ./wrapper -->
+	
+	
+	
 	<div id="sharebutton">
 	<span class='st_facebook_large'></span>
 	<span class='st_twitter_large'></span>
@@ -100,12 +102,14 @@
 	<span class='st_whatsapp_large' ></span>
 	<span class='st_email_large'></span>
 	</div>
+	
 	<div>
 	<form method="post" action="<?=base_url()?>user/input"> 
 	<input type="text" name="input_comment" placeholder="Your comment here...">
 	<input type="submit" value="Comment" name="input"/>
 	</form>
 	</div>
+	
 	<div>instagram feed</div>
 	<div id="instafeed"> </div>
 	<?php $this->load->view('include/footer');
