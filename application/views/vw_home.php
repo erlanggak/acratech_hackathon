@@ -23,12 +23,68 @@
       
 
       <div class="content-wrapper" >
-         
+         <!-- Small boxes (Stat box) -->
+         <div class="content">
+          <div class="row">
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-aqua">
+                <div class="inner">
+                  <h3>100</h3>
+                  <p>Shoping Center</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-bag"></i>
+                </div>
+                <a href="#" class="small-box-footer">Find more <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-green">
+                <div class="inner">
+                  <h3>100 <sup style="font-size: 20px"></sup></h3>
+                  <p>Cafe n Coffee Shop</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-chatbubbles"></i>
+                </div>
+                <a href="#" class="small-box-footer">Find more <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-yellow">
+                <div class="inner">
+                  <h3>100 </h3>
+                  <p>Museums</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-android-home"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-red">
+                <div class="inner">
+                  <h3>100</h3>
+                  <p>Tour Agent</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-android-car"></i>
+                </div>
+                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+          </div><!-- /.row -->
       </div><!-- /.content-wrapper -->
+      </div>
       <?php $this->load->view('include/footer');
       ?>
     </div><!-- ./wrapper -->
-
+    
     <!-- jQuery 2.1.4 -->
     <script src="<?php echo base_url('')?>plugins/jQuery/jQuery-2.1.4.min.js" type="text/javascript"></script>
     <!-- Bootstrap 3.3.2 JS -->

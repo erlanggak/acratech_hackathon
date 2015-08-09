@@ -15,7 +15,7 @@ class Logout extends CI_Controller {
 	{
 		$data['title'] = 'Welcome to Jakart Tourism';
 		$this->session->sess_destroy();
-		redirect('login');
+		redirect('beranda');
 		//$this->load->view('login',$data);
 	}
 
@@ -35,7 +35,7 @@ class Logout extends CI_Controller {
 		}
 		else
 		{
-			redirect('login');
+			redirect('beranda');
 		}
 	}
 
