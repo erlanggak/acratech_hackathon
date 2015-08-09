@@ -4,7 +4,6 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <style type="text/css">
-	
     </style>
 	
     <?php
@@ -113,20 +112,26 @@
 			<input type="textarea" name="comment" placeholder="Your comment here...">
 			<input type="hidden" name="user" value="<?php echo $_SESSION['username'];?>">
 			<input type="hidden" name="destination" value="<?php echo $xml->result->{'item' .$_GET['id']}->name?>">
-			<div style="margin-left:0%">
-				<input type="radio" name="rate" class="minimal" value ="1" id="star-1"/>
-				<label class="star-1" for="star-1">1</label>
-				<input type="radio" name="rate" class="star-2" value ="2" id="star-2"/>
-				<label class="star-2" for="star-2">2</label>
-				<input type="radio" name="rate" class="star-3" value ="3" id="star-3"/>
-				<label class="star-3" for="star-3">3</label>
-				<input type="radio" name="rate" class="star-4" value ="4" id="star-4"/>
-				<label class="star-4" for="star-4">4</label>
-				<input type="radio" name="rate" class="star-5" value ="5" id="star-5"/>
-				<label class="star-5" for="star-5">5</label>
-				<span></span>
-				
-			</div>
+			<form id="ratingsForm">
+				<div class="stars">
+					<span>
+					<input type="radio" name="star" class="star-1" id="star-1" />
+					<label class="star-1" for="star-1"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="star" class="star-2" id="star-2" />
+					<label class="star-2" for="star-2"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="star" class="star-3" id="star-3" />
+					<label class="star-3" for="star-3"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="star" class="star-4" id="star-4" />
+					<label class="star-4" for="star-4"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					<br>
+					<input type="radio" name="star" class="star-5" id="star-5" />
+					<label class="star-5" for="star-5"><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img><img id="logo" height="20px" src="<?php echo base_url('') ?>image/star.png"></img></label>
+					</span>
+				</div>
+			</form>
 			<!--<input type="hidden" name="rate" value="">-->
 			<!--<input type="hidden" name="time" value="">-->
 			<input type="submit" value="Comment" name="input"/>
