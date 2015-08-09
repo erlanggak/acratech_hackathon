@@ -44,6 +44,33 @@ class Home extends CI_Controller {
     	}
 	}
 
+	public function list_museum(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "List Museum | Baper";
+			$this->load->view('vw_list_museum',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
+
+	public function list_shoping(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "List Shoping Center | Baper";
+			$this->load->view('vw_list_shoping',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
+
+	public function list_travel(){
+		if ($this->session->userdata('logged_in')) {
+			$data['title'] = "List Tour & Travel Agent | Baper";
+			$this->load->view('vw_list_travel',$data);
+		} else {
+        	redirect('login');
+    	}
+	}
+
 	public function error_404(){
 		if ($this->session->userdata('logged_in')) {
 			$data['title'] = "Sorry | Baper";

@@ -36,7 +36,7 @@
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="#" class="small-box-footer">Find more <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo base_url('')?>home/list_shoping" class="small-box-footer">Find more <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -62,7 +62,7 @@
                 <div class="icon">
                   <i class="ion ion-android-home"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo base_url('')?>home/list_museum" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
             <div class="col-lg-3 col-xs-6">
@@ -75,7 +75,7 @@
                 <div class="icon">
                   <i class="ion ion-android-car"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo base_url('')?>home/list_travel" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
 

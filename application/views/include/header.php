@@ -1,10 +1,19 @@
+<style type="text/css">
+.navbar-brand {
+  padding-top: 0;
+
+}
+img#logo {
+  
+}
+</style>
 <header class="main-header">
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
               <?php 
               if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
-                <a href="<?php echo base_url('')?>home" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png"></img></a>
+                <a href="<?php echo base_url('')?>home" class="navbar-brand"><img id="logo" src="<?php echo base_url('') ?>image/logo.png"></img></a>
               <?php } else { ?>
                 <a href="<?php echo base_url('')?>" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png"></img></a>
               <?php } ?>
