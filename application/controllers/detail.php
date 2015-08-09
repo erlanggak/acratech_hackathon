@@ -25,6 +25,6 @@ class Detail extends CI_Controller {
 		$comment = ($this->input->post('comment'));
 		
 		$this->Model_user->insert($user, $username, $password, $comment);
-          redirect(base_url("user/about"));
+        redirect(base_url("home"));
 	}
 }

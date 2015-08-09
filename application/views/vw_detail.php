@@ -112,10 +112,10 @@
 	</div>
 	
 	<div>
-	<form method="post" action="<?=base_url()?>user/input"> 
-	<input type="text" name="input_comment" placeholder="Your comment here...">
-	<input type="submit" value="Comment" name="input"/>
-	</form>
+		<form method="post" action="<?echo base_url('')?>detail/input"> 
+			<input type="textarea" name="input_comment" placeholder="Your comment here...">
+			<input type="submit" value="Comment" name="input"/>
+		</form>
 	</div>
 	
 	<div>instagram feed</div>
