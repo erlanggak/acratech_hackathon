@@ -9,14 +9,14 @@
     ?>
     <style type="text/css">
       img#enjoy {
-        position:absolute;
+        position:auto;
         margin-left:auto;
          margin-right:auto;
          margin-top:auto;
          margin-bottom:auto;
          left:0;
          right:0;
-         top:70px;
+         top:0;
          bottom:0;
       }
       
@@ -81,9 +81,11 @@
               </div>
             </div><!-- ./col -->
           <?php } ?>
+          <h1 style="color:#00F; font-family:verdana;">Beranda Aplikasi Pariwisata & Rekreasi</h1>
           </div><!-- /.row -->
           <!-- Main row -->
           <div class="row">
+
             <img id="enjoy" src="<?php echo base_url('')?>image/enjoy.png" height="250px">
             
           </div>
