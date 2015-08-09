@@ -35,6 +35,8 @@
         <section class="content">
           <!-- Small boxes (Stat box) -->
           <div class="row">
+            <?php   
+                  if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
             <div class="col-lg-3 col-xs-6" >
               <!-- small box -->
               <div class="small-box bg-aqua">
@@ -48,6 +50,7 @@
                 <a href="<?php echo base_url('')?>login" class="small-box-footer">continue <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
+            <?php } ?>
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-green">
