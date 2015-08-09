@@ -70,9 +70,6 @@
     </head>
 <body class="skin-blue layout-top-nav">
 <<<<<<< HEAD
-	<?php 
-		$this->load->view('include/header')
-	?>
 =======
     <div class="wrapper" id="content">
 
