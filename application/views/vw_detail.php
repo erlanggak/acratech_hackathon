@@ -29,7 +29,12 @@
 	#instafeed {
 		white-space:nowrap;
 	}
+	#bottom {
+		float: bottom;
+	}
 	#details {
+		height: 320px;
+		width: 320px;
 		float: left;
 		padding: 20px;
 	}
@@ -64,6 +69,11 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
+<<<<<<< HEAD
+	<?php 
+		$this->load->view('include/header')
+	?>
+=======
     <div class="wrapper" id="content">
 
 		<?php 
@@ -101,7 +111,25 @@
     </div><!-- ./wrapper -->
 	
 	
+>>>>>>> b2639cd8365bd3c76cd4a6fccc9e7e3da45d39a2
 	
+	<div class="row">
+	<div id="map-canvas">
+	</div>
+	<div id="details">
+		<?php
+		echo "Name\t: ". $xml->result->{'item' .$_GET['id']}->name . "<br>";
+		echo "Longitude\t: ". $xml->result->{'item' .$_GET['id']}->longitude. "<br>";
+		echo "Latitude\t: ". $xml->result->{'item' .$_GET['id']}->latitude. "<br>";
+		echo "Village\t: ". $xml->result->{'item' .$_GET['id']}->village. "<br>";
+		echo "Subdistrict\t: ". $xml->result->{'item' .$_GET['id']}->subdistrict. "<br>";
+		echo "District\t: ". $xml->result->{'item' .$_GET['id']}->district. "<br>";
+		echo "Address\t: ". $xml->result->{'item' .$_GET['id']}->address. "<br>";
+		echo "Telephone\t: ". $xml->result->{'item' .$_GET['id']}->telephone. "<br>";
+		?>
+	</div>
+	</div>
+	<div class="row">
 	<div id="sharebutton">
 	<span class='st_facebook_large'></span>
 	<span class='st_twitter_large'></span>
@@ -110,7 +138,7 @@
 	<span class='st_whatsapp_large' ></span>
 	<span class='st_email_large'></span>
 	</div>
-	
+
 	<div>
 		<form method="post" action="<?echo base_url('')?>detail/input"> 
 			<input type="textarea" name="input_comment" placeholder="Your comment here...">
@@ -120,6 +148,7 @@
 	
 	<div>instagram feed</div>
 	<div id="instafeed"> </div>
+	</div>
 	<?php $this->load->view('include/footer');
     ?>
     <!-- jQuery 2.1.4 -->
