@@ -70,18 +70,9 @@
     </script>
     </head>
 <body class="skin-blue layout-top-nav">
-<<<<<<< HEAD
-
-
     <div class="wrapper" id="content">
-
-	
-
 	<?php 
 
-=======
-	<?php 
->>>>>>> 8f79e803de84706783a330ee0242bf87c68b103d
 			$this->load->view('include/header')
 	?>
 	
