@@ -2,7 +2,12 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="<?php echo base_url('')?>home" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png" height = "27px"></img></a>
+              <?php 
+              if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
+                <a href="<?php echo base_url('')?>home" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png" height = "27px"></img></a>
+              <?php } else { ?>
+                <a href="<?php echo base_url('')?>" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png" height = "27px"></img></a>
+              <?php } ?>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>

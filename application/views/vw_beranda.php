@@ -35,22 +35,11 @@
         <section class="content">
           <!-- Small boxes (Stat box) -->
           <div class="row">
+            
+            
+            
             <?php   
                   if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
-            <div class="col-lg-3 col-xs-6" >
-              <!-- small box -->
-              <div class="small-box bg-aqua">
-                <div class="inner">
-                  <h3>Login</h3>
-                  <p>You can find more amazing place</p>
-                </div>
-                <div class="icon">
-                  <i class="ion ion-log-in"></i>
-                </div>
-                <a href="<?php echo base_url('')?>login" class="small-box-footer">continue <i class="fa fa-arrow-circle-right"></i></a>
-              </div>
-            </div><!-- ./col -->
-            <?php } ?>
             <div class="col-lg-3 col-xs-6">
               <!-- small box -->
               <div class="small-box bg-green">
@@ -64,6 +53,34 @@
                 <a href="<?php echo base_url('')?>beranda/aboutus" class="small-box-footer">find more <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
+            <?php } else {?>
+            <div class="col-lg-3 col-xs-6" >
+              <!-- small box -->
+              <div class="small-box bg-aqua">
+                <div class="inner">
+                  <h3>Login</h3>
+                  <p>You can find more amazing place</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-log-in"></i>
+                </div>
+                <a href="<?php echo base_url('')?>login" class="small-box-footer">continue <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+              <!-- small box -->
+              <div class="small-box bg-green">
+                <div class="inner">
+                  <h3>About</h3>
+                  <p>Asia Creative Technology</p>
+                </div>
+                <div class="icon">
+                  <i class="ion ion-cube"></i>
+                </div>
+                <a href="<?php echo base_url('')?>beranda/aboutus" class="small-box-footer">find more <i class="fa fa-arrow-circle-right"></i></a>
+              </div>
+            </div><!-- ./col -->
+          <?php } ?>
           </div><!-- /.row -->
           <!-- Main row -->
           <div class="row">
