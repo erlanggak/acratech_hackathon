@@ -6,6 +6,7 @@ class Home extends CI_Controller {
 	    parent::__construct();
 	    $this->load->library('session');
 	    $this->load->model('auth');
+	    $this->load->model('md_timeline');
 	    $this->load->helper(array('form', 'url'));
   	}
 	public function index(){
@@ -29,6 +30,7 @@ class Home extends CI_Controller {
 	public function timeline(){
 		if ($this->session->userdata('logged_in')) {
 			$data['title'] = "Curhat di Timeline | Baper";
+			$data['curhatan'] = $this->md_timeline->load();
 			$this->load->view('vw_timeline',$data);
 		} else {
         	redirect('login');
