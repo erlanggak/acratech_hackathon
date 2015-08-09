@@ -4,9 +4,9 @@
             <div class="navbar-header">
               <?php 
               if(isset($_SESSION['username']) || isset($_SESSION['password'])){ ?>
-                <a href="<?php echo base_url('')?>home" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png" height = "27px"></img></a>
+                <a href="<?php echo base_url('')?>home" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png"></img></a>
               <?php } else { ?>
-                <a href="<?php echo base_url('')?>" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png" height = "27px"></img></a>
+                <a href="<?php echo base_url('')?>" class="navbar-brand"><img src="<?php echo base_url('') ?>image/logo.png"></img></a>
               <?php } ?>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
